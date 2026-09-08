@@ -40,6 +40,36 @@ cd multimodal-hyperspectral-phenotyping
 - **Python 3.9+**（推荐 3.10–3.12；Docker 镜像基于 3.12）
 - 其余依赖见 `requirements.txt`（网络、探地等数据处理相关系统库见 Dockerfile）
 
+## 一键安装（推荐）
+
+不想手动敲命令？直接跑引导脚本，它会自动：
+
+1. 检查 Python 版本（需 3.9+）
+2. 创建或复用虚拟环境 `.venv`
+3. 逐项检测依赖，缺失 / 版本不符时自动安装
+4. 自检（模块导入 + 端到端合成数据流水线）
+5. 打印启动指引
+
+**Windows：** 双击 `install.bat`
+
+**Linux / macOS：**
+
+```bash
+./install.sh
+```
+
+**跨平台通用（手动调用引导器）：**
+
+```bash
+python bootstrap.py                  # 检测 + 补全依赖 + 自检 + 启动指引
+python bootstrap.py --run            # 自检通过后直接启动演示
+python bootstrap.py --with-optional  # 一并安装公开数据集可选依赖
+python bootstrap.py --quick          # 自检只做导入检查，更快
+```
+
+> 机器上还没装 Python 的话，先去 https://www.python.org/ 装 3.9+，安装时勾选
+> **Add Python to PATH**。
+
 ## 安装
 
 ```bash
