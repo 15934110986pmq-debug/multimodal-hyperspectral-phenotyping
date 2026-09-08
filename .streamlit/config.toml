@@ -1,0 +1,17 @@
+[server]
+headless = true
+address = "0.0.0.0"
+port = 8501
+fileWatcherType = "none"
+runOnSave = true
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[theme]
+base = "dark"
+primaryColor = "#3fe0a5"
+backgroundColor = "#0b1220"
+secondaryBackgroundColor = "#0e1c38"
+textColor = "#cfe1f5"

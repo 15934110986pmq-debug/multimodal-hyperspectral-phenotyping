@@ -1,0 +1,8 @@
+.venv/
+output/
+data/uploads/
+__pycache__/
+*.pyc
+*.egg-info/
+.DS_Store
+SY-*.pdf

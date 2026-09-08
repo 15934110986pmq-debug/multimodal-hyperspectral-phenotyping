@@ -1,0 +1,11 @@
+.venv
+.git
+__pycache__
+*.pyc
+output
+data
+.streamlit
+.gitignore
+Dockerfile
+.dockerignore
+SY-*.pdf
